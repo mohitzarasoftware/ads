@@ -379,6 +379,19 @@ $white-new:#e8e8e8 !default;
         font-weight: 700;
     }
 }
+@media (max-width:767px){
+    .fixed-section {
+        padding: 15px;
+        & .fixed-section-title {
+            font-size: 18px;
+        }
+        & .common-btn {
+            & .common-btn-heading {
+                font-size: 20px;
+            }
+        }
+    }
+}
 // fixed section end
 
 
@@ -408,6 +421,14 @@ $white-new:#e8e8e8 !default;
                 }
             }
         }
+        & .accordion-body {
+            font-size: 15px;
+            line-height: 26px;
+            & >* {
+                font-size: 15px;
+                line-height: 26px;
+            }
+        }
         & .accordion-icon {
             height: 22px;
             min-width: 22px;
@@ -430,7 +451,22 @@ $white-new:#e8e8e8 !default;
     }
 }
 @media (max-width:767px){
-
+    .faq-section {
+        & .accordion {
+            gap: 12px;
+            & .accordion-button {
+                font-size: 16px;
+                padding: 12px;
+            }
+            & .accordion-body {
+                padding: 12px;
+            }
+        }
+        & .faq-details {
+            margin-top: 20px;
+            line-height: 26px;
+        }
+    }
 }
 // faq section end
 
