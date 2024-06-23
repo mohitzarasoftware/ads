@@ -1094,6 +1094,10 @@ $white-new:#e8e8e8 !default;
             border-left: 0;
             padding-block: 35px;
         }
+        & .payment-btn {
+            padding: 15px;
+            font-size: 16px;
+        }
     }
 }
 // payment page end
