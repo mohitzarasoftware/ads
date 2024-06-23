@@ -199,97 +199,57 @@ $white-new:#e8e8e8 !default;
             line-height:33px;
             margin-top: 8px;
         }
-
         & .hero-inner-card {
-            padding: 12px;
-            border: 1px solid var(--theme1);
-            background-color: #fff;
-            border-radius: 12px;
-            gap: 14px;
+            padding: 10px;
             & .hero-innercard-icon {
-                height: 65px;
-                min-width: 65px;
-                max-width: 65px;
-                background-color: var(--theme1);
-                color: #fff;
-                font-size: 32px;
+                height: 60px;
+                min-width: 60px;
+                max-width: 60px;
+                font-size: 25px;
             }
             & .hero-inner-card-heading {
-                font-size: 17px;
-                font-weight: 400 ;
-                color: #656565;
-                font-family: emoji;
+                font-size: 16px;
             }
             & .hero-inner-card-title {
-                font-size: 18px;
-                font-weight: 600;
-                margin-top: 4px;
-                font-family: auto;
+                font-size: 17px;
+                margin-top: 3px;
             }
         }
         & .hero-host-card {
-            border: 1px solid var(--theme1);
-            background-color: #fff;
-            border-radius: 12px;
-            padding: 0 20px 20px;
+            padding: 0 15px 15px;
             & .hero-host-card-heading {
-                font-size: 19px;
-                font-weight: 600;
-                color: #fff;
-                background-color: var(--theme1);
-                line-height: normal;
-                padding: 8px 18px;
-                border-radius: 0 0 22px 22px  ;
+                font-size: 17px;
             }
             & .hero-host-card-title {
-                font-size: 18px;
-                font-weight: 700;
+                font-size: 16px;
             }
         }
         & .hero-count-card {
-            padding: 15px;
-            border: 1.5px solid var(--theme1);
-            border-radius: 13px  ;
+            padding: 12px;
             & .hero-count-card-part {
-                font-size: 20px;
-                font-weight: 700;
-                color: var(--theme1);
+                font-size: 18px;
             }
             & .hero-countcard-heading {
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 18px;
             }
             & .hero-count-inner-card {
-                height: 90px;
-                min-width: 90px;
-                max-width: 70px;
-                border: 2px solid var(--theme1);
-                background-color: var(--theme1);
+                height: 65px;
+                min-width: 65px;
+                max-width: 65px;
                 & .hero-count-innercard-heading {
-                    font-size: 27px;
-                    font-weight: 700;
-                    // color: var(--theme1);
-                    color: #fff;
-                    line-height: normal;
+                    font-size: 21px;
                 }
                 & .hero-count-innercard-title {
-                    font-size: 16px;
-                    font-weight: 600;
-                    color:#fff;
+                    font-size: 12px;
                 }
             }
         }
         & .hero-join-title {
-            font-size: 24px;
-            font-weight: 600;
-            color: #fff;
+            font-size: 22px;
         }
         & .hero-video-subtitle {
-            font-size: 22px;
-            color: #fff;
-            font-weight: 600;
-            margin-top: 3px;
-            color: var(--theme1);
+            font-size: 18px;
+            margin-top: 6px;
         }
     }
 }
@@ -334,8 +294,46 @@ $white-new:#e8e8e8 !default;
         }
     }
 }
+@media (max-width:767px){
+    .secret-section {
+        margin-top: -50px;
+        & .secret-inner {
+            padding: 12px;
+            border: 3px solid var(--black);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        & .secret-card {
+            padding: 15px;
+            border-radius: 8px;
+            background-color: $black;
+            border: 1px solid var(--theme1);
+            & .secret-card-heading {
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 600;
+                color: #fff;
+                gap: 10px;
+            }
+            & .secret-card-icon {
+                font-size: 18px;
+                color: var(--theme1);
+            }
+            & .secret-card-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--theme1);
+                margin-top: 10px;
+            }
+            & .secret-card-para {
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
 // secrat section end
-
 
 
 // fixed section start 
@@ -386,7 +384,6 @@ $white-new:#e8e8e8 !default;
 
 // faq section start 
 .faq-section {
-    padding:50px 25px;
     & .accordion {
         gap: 15px;
         & .accordion-item {
@@ -431,6 +428,9 @@ $white-new:#e8e8e8 !default;
         margin-bottom: 0;
         line-height: 26px;
     }
+}
+@media (max-width:767px){
+
 }
 // faq section end
 
@@ -481,6 +481,29 @@ $white-new:#e8e8e8 !default;
         color: var(--theme2);
     }
 }
+@media (max-width:767px){
+    .challenges-section  {
+        & .challenges-card{
+            padding: 15px;
+        }
+        & .challenges-below-heading {
+            font-size: 17px;
+            line-height: 29px;
+        }
+        & .challenges-below-subheading {
+            font-size: 19px;
+            line-height: 31px;
+        }
+        & .challenges-below-card {
+            font-size: 16px;
+            padding: 10px;
+            line-height: 30px;
+        }
+        & .challenges-below-title {
+            font-size: 20px ;
+        }
+    }
+}
 // challanges section end
 
 
@@ -517,6 +540,26 @@ $white-new:#e8e8e8 !default;
     }
     & .timeline-count {
         height: 95px;
+    }
+}
+@media (max-width:767px){
+    .timeline-section {
+        & .timeline-card {
+            padding: 8px;
+            gap: 8px;
+            & .timeline-check-icon {
+                height: 20px;
+                min-width: 20px;
+                max-width: 20px;
+             }
+            & .timeline-card-title {
+                font-size: 18px;
+                color: var(--theme1);
+            }
+        }
+        & .timeline-count {
+            height: 85px;
+        }
     }
 }
 // time line section end 
@@ -572,6 +615,35 @@ $white-new:#e8e8e8 !default;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 }
+@media (max-width:767px) {
+    .benefit-section {
+        & .benefit-card {
+            padding: 12px;
+            gap: 8px;
+            & .benefit-icon {
+                font-size: 20px;
+            }
+            & .benefit-detail {
+                & p {
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+            }
+        }
+        & .benefit-heading {
+            font-size: 20px;
+            margin-top:30px;
+        }
+        & .benefit-below-card {
+            padding: 12px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        & .befefits-user-img {
+            max-height: 330px;
+        }
+    }
+}
 // benefit section end
 
 
@@ -596,6 +668,27 @@ $white-new:#e8e8e8 !default;
             color: #1e1e1e;
             font-size: 18px;
             line-height: 36px;
+        }
+    }
+}
+@media (max-width:767px){
+    .about-section {
+        & .about-inner-main {
+            padding:0 12px;
+            margin-top: 40px;
+        }
+        & .about-inner {
+            padding: 12px;
+            top: -40px;
+        }
+        & .about-img {
+            max-height: 350px;
+        }
+        & .about-text {
+            & p {
+                font-size: 15px;
+                line-height: 30px;
+            }
         }
     }
 }
@@ -635,6 +728,32 @@ $white-new:#e8e8e8 !default;
             margin-bottom: 0;
             font-size: 18px;
             line-height: 30px;
+        }
+    }
+}
+@media (max-width:767px){
+    .workshop-section {
+        & .workshop-card {
+            gap: 12px;
+            & .workshop-card-img {
+                height: 55px;
+            }
+            & .workshop-card-title {
+                font-size: 17px;
+            }
+        }
+        & .workshop-title {
+           & >* {
+            font-size: 17px;
+            line-height: 30px;
+           }
+        }
+        & .workshop-card-two {
+            padding:  15px;
+            & .workshop-card-two-title {
+                font-size: 16px;
+                line-height: 30px;
+            }
         }
     }
 }
@@ -711,5 +830,55 @@ $white-new:#e8e8e8 !default;
         color: rgb(16, 171, 16);
     }
 
+}
+
+@media (max-width:767px){
+    .bonus-section {
+        & .bonus-heading {
+            font-size: 22px;
+        }
+        & .bonus-subheading {
+            font-size: 17px;
+            line-height: 28px;
+        }
+        & .bonus-card {
+            & .bonus-header {
+                padding: 12px;
+            }
+            & .bonus-card-line {
+                font-size: 20px;
+            }
+            & .bonus-body {
+                padding: 12px;
+            }
+            & .bonus-card-heading {
+                font-size: 19px;
+            }
+            & .bonus-card-price {
+                font-size: 19px;
+                margin-top: 10px;
+            }
+        }
+        & .bonus-list {
+            gap: 10px;
+            & li {
+                font-size: 15px;
+                line-height: 26px;
+                & i {
+                    margin-top: 7px;
+                }
+            }
+        }
+        & .bonus-price-title {
+            font-size: 20px;
+        }
+        & .bonus-price {
+            font-size: 22px;
+        }
+        & .bonus-price-two {
+            font-size: 25px;
+        }
+    
+    }
 }
 // bonus section end

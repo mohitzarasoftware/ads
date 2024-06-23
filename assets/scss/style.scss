@@ -39,6 +39,8 @@ div.bg-light {
     & .heading {
         font-size: 35px;
         font-weight: 700;
+        line-height: normal;
+        padding-bottom: 2px;
     }
     & .heading-color {
         color: var(--theme1);
@@ -112,3 +114,30 @@ div.bg-light {
 
 
 // mixin 
+@media (max-width:767px){
+    .common-btn {
+        padding: 12px 30px;
+        animation: animatedgradient 3s ease infinite alternate;
+        & .common-btn-heading {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: normal;
+        }
+        & .common-btn-title {
+            font-size: 14px;
+        }
+    }
+    .heading-section {
+        & .heading {
+            font-size: 22px;
+        }
+        & .subheading {
+            font-size: 16px ;
+            line-height: 28px;
+        }
+    }
+    .common-padding {
+        padding-bottom:40px;
+        padding-top: 35px;
+    }
+}
